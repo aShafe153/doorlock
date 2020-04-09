@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+import RPi.GPIO as GPIO
+from mfrc522 import SimpleMFRC522
+
+users = ["James", "Jared", "Alex"]
+uid = [1234, 5678, 9123]
+
+door = False
+
+reader = SimpleMFRC522()
+
+def idloop(x):
+	for x in uid:
+
+def names(a):
+	for a in users:
+
+
+while True:
+	pass:
+        id, text = reader.read()
+        	if id == idloop(x) and text == names(a):
+        		door = True
+        	else:
+        		door = False
+        		print(id)
+        		print(text)
+finally:
+        GPIO.cleanup()
